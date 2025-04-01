@@ -1,0 +1,656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D7A786C02D9B8F6A008FEF2E /* WushuScoringAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A786BF2D9B8F6A008FEF2E /* WushuScoringAppApp.swift */; };
+		D7A786C22D9B8F6A008FEF2E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A786C12D9B8F6A008FEF2E /* ContentView.swift */; };
+		D7A786C42D9B8F6C008FEF2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7A786C32D9B8F6C008FEF2E /* Assets.xcassets */; };
+		D7A786C72D9B8F6C008FEF2E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7A786C62D9B8F6C008FEF2E /* Preview Assets.xcassets */; };
+		D7A786D12D9B8F6C008FEF2E /* WushuScoringAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A786D02D9B8F6C008FEF2E /* WushuScoringAppTests.swift */; };
+		D7A786DB2D9B8F6C008FEF2E /* WushuScoringAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A786DA2D9B8F6C008FEF2E /* WushuScoringAppUITests.swift */; };
+		D7A786DD2D9B8F6C008FEF2E /* WushuScoringAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A786DC2D9B8F6C008FEF2E /* WushuScoringAppUITestsLaunchTests.swift */; };
+		D7A786EB2D9B96C5008FEF2E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D7A786EA2D9B96C5008FEF2E /* Alamofire */; };
+		D7A786EE2D9B96EE008FEF2E /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = D7A786ED2D9B96EE008FEF2E /* SocketIO */; };
+		D7A786F02D9B972A008FEF2E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A786EF2D9B972A008FEF2E /* NetworkManager.swift */; };
+		D7A786F22D9B977F008FEF2E /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A786F12D9B977F008FEF2E /* AuthManager.swift */; };
+		D7A786F42D9B97D9008FEF2E /* SocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A786F32D9B97D9008FEF2E /* SocketManager.swift */; };
+		D7A786F62D9C774F008FEF2E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A786F52D9C774F008FEF2E /* LoginView.swift */; };
+		D7A786F82D9C777B008FEF2E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A786F72D9C777B008FEF2E /* HomeView.swift */; };
+		D7A786FA2D9C7813008FEF2E /* HeadJudgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A786F92D9C7813008FEF2E /* HeadJudgeView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D7A786CD2D9B8F6C008FEF2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7A786B42D9B8F6A008FEF2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7A786BB2D9B8F6A008FEF2E;
+			remoteInfo = WushuScoringApp;
+		};
+		D7A786D72D9B8F6C008FEF2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7A786B42D9B8F6A008FEF2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7A786BB2D9B8F6A008FEF2E;
+			remoteInfo = WushuScoringApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D7A786BC2D9B8F6A008FEF2E /* WushuScoringApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WushuScoringApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7A786BF2D9B8F6A008FEF2E /* WushuScoringAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WushuScoringAppApp.swift; sourceTree = "<group>"; };
+		D7A786C12D9B8F6A008FEF2E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D7A786C32D9B8F6C008FEF2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D7A786C62D9B8F6C008FEF2E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D7A786CC2D9B8F6C008FEF2E /* WushuScoringAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WushuScoringAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7A786D02D9B8F6C008FEF2E /* WushuScoringAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WushuScoringAppTests.swift; sourceTree = "<group>"; };
+		D7A786D62D9B8F6C008FEF2E /* WushuScoringAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WushuScoringAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7A786DA2D9B8F6C008FEF2E /* WushuScoringAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WushuScoringAppUITests.swift; sourceTree = "<group>"; };
+		D7A786DC2D9B8F6C008FEF2E /* WushuScoringAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WushuScoringAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D7A786EF2D9B972A008FEF2E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D7A786F12D9B977F008FEF2E /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		D7A786F32D9B97D9008FEF2E /* SocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketManager.swift; sourceTree = "<group>"; };
+		D7A786F52D9C774F008FEF2E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		D7A786F72D9C777B008FEF2E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D7A786F92D9C7813008FEF2E /* HeadJudgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadJudgeView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D7A786B92D9B8F6A008FEF2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7A786EB2D9B96C5008FEF2E /* Alamofire in Frameworks */,
+				D7A786EE2D9B96EE008FEF2E /* SocketIO in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7A786C92D9B8F6C008FEF2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7A786D32D9B8F6C008FEF2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D7A786B32D9B8F6A008FEF2E = {
+			isa = PBXGroup;
+			children = (
+				D7A786BE2D9B8F6A008FEF2E /* WushuScoringApp */,
+				D7A786CF2D9B8F6C008FEF2E /* WushuScoringAppTests */,
+				D7A786D92D9B8F6C008FEF2E /* WushuScoringAppUITests */,
+				D7A786BD2D9B8F6A008FEF2E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D7A786BD2D9B8F6A008FEF2E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D7A786BC2D9B8F6A008FEF2E /* WushuScoringApp.app */,
+				D7A786CC2D9B8F6C008FEF2E /* WushuScoringAppTests.xctest */,
+				D7A786D62D9B8F6C008FEF2E /* WushuScoringAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D7A786BE2D9B8F6A008FEF2E /* WushuScoringApp */ = {
+			isa = PBXGroup;
+			children = (
+				D7A786BF2D9B8F6A008FEF2E /* WushuScoringAppApp.swift */,
+				D7A786C12D9B8F6A008FEF2E /* ContentView.swift */,
+				D7A786C32D9B8F6C008FEF2E /* Assets.xcassets */,
+				D7A786C52D9B8F6C008FEF2E /* Preview Content */,
+				D7A786EF2D9B972A008FEF2E /* NetworkManager.swift */,
+				D7A786F12D9B977F008FEF2E /* AuthManager.swift */,
+				D7A786F32D9B97D9008FEF2E /* SocketManager.swift */,
+				D7A786F52D9C774F008FEF2E /* LoginView.swift */,
+				D7A786F72D9C777B008FEF2E /* HomeView.swift */,
+				D7A786F92D9C7813008FEF2E /* HeadJudgeView.swift */,
+			);
+			path = WushuScoringApp;
+			sourceTree = "<group>";
+		};
+		D7A786C52D9B8F6C008FEF2E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D7A786C62D9B8F6C008FEF2E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D7A786CF2D9B8F6C008FEF2E /* WushuScoringAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				D7A786D02D9B8F6C008FEF2E /* WushuScoringAppTests.swift */,
+			);
+			path = WushuScoringAppTests;
+			sourceTree = "<group>";
+		};
+		D7A786D92D9B8F6C008FEF2E /* WushuScoringAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D7A786DA2D9B8F6C008FEF2E /* WushuScoringAppUITests.swift */,
+				D7A786DC2D9B8F6C008FEF2E /* WushuScoringAppUITestsLaunchTests.swift */,
+			);
+			path = WushuScoringAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D7A786BB2D9B8F6A008FEF2E /* WushuScoringApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7A786E02D9B8F6C008FEF2E /* Build configuration list for PBXNativeTarget "WushuScoringApp" */;
+			buildPhases = (
+				D7A786B82D9B8F6A008FEF2E /* Sources */,
+				D7A786B92D9B8F6A008FEF2E /* Frameworks */,
+				D7A786BA2D9B8F6A008FEF2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WushuScoringApp;
+			packageProductDependencies = (
+				D7A786EA2D9B96C5008FEF2E /* Alamofire */,
+				D7A786ED2D9B96EE008FEF2E /* SocketIO */,
+			);
+			productName = WushuScoringApp;
+			productReference = D7A786BC2D9B8F6A008FEF2E /* WushuScoringApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D7A786CB2D9B8F6C008FEF2E /* WushuScoringAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7A786E32D9B8F6C008FEF2E /* Build configuration list for PBXNativeTarget "WushuScoringAppTests" */;
+			buildPhases = (
+				D7A786C82D9B8F6C008FEF2E /* Sources */,
+				D7A786C92D9B8F6C008FEF2E /* Frameworks */,
+				D7A786CA2D9B8F6C008FEF2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7A786CE2D9B8F6C008FEF2E /* PBXTargetDependency */,
+			);
+			name = WushuScoringAppTests;
+			productName = WushuScoringAppTests;
+			productReference = D7A786CC2D9B8F6C008FEF2E /* WushuScoringAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D7A786D52D9B8F6C008FEF2E /* WushuScoringAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7A786E62D9B8F6C008FEF2E /* Build configuration list for PBXNativeTarget "WushuScoringAppUITests" */;
+			buildPhases = (
+				D7A786D22D9B8F6C008FEF2E /* Sources */,
+				D7A786D32D9B8F6C008FEF2E /* Frameworks */,
+				D7A786D42D9B8F6C008FEF2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7A786D82D9B8F6C008FEF2E /* PBXTargetDependency */,
+			);
+			name = WushuScoringAppUITests;
+			productName = WushuScoringAppUITests;
+			productReference = D7A786D62D9B8F6C008FEF2E /* WushuScoringAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D7A786B42D9B8F6A008FEF2E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					D7A786BB2D9B8F6A008FEF2E = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					D7A786CB2D9B8F6C008FEF2E = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = D7A786BB2D9B8F6A008FEF2E;
+					};
+					D7A786D52D9B8F6C008FEF2E = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = D7A786BB2D9B8F6A008FEF2E;
+					};
+				};
+			};
+			buildConfigurationList = D7A786B72D9B8F6A008FEF2E /* Build configuration list for PBXProject "WushuScoringApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D7A786B32D9B8F6A008FEF2E;
+			packageReferences = (
+				D7A786E92D9B96C5008FEF2E /* XCRemoteSwiftPackageReference "Alamofire" */,
+				D7A786EC2D9B96EE008FEF2E /* XCRemoteSwiftPackageReference "socket.io-client-swift" */,
+			);
+			productRefGroup = D7A786BD2D9B8F6A008FEF2E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D7A786BB2D9B8F6A008FEF2E /* WushuScoringApp */,
+				D7A786CB2D9B8F6C008FEF2E /* WushuScoringAppTests */,
+				D7A786D52D9B8F6C008FEF2E /* WushuScoringAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D7A786BA2D9B8F6A008FEF2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7A786C72D9B8F6C008FEF2E /* Preview Assets.xcassets in Resources */,
+				D7A786C42D9B8F6C008FEF2E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7A786CA2D9B8F6C008FEF2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7A786D42D9B8F6C008FEF2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D7A786B82D9B8F6A008FEF2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7A786F62D9C774F008FEF2E /* LoginView.swift in Sources */,
+				D7A786F82D9C777B008FEF2E /* HomeView.swift in Sources */,
+				D7A786FA2D9C7813008FEF2E /* HeadJudgeView.swift in Sources */,
+				D7A786F02D9B972A008FEF2E /* NetworkManager.swift in Sources */,
+				D7A786F22D9B977F008FEF2E /* AuthManager.swift in Sources */,
+				D7A786C22D9B8F6A008FEF2E /* ContentView.swift in Sources */,
+				D7A786C02D9B8F6A008FEF2E /* WushuScoringAppApp.swift in Sources */,
+				D7A786F42D9B97D9008FEF2E /* SocketManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7A786C82D9B8F6C008FEF2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7A786D12D9B8F6C008FEF2E /* WushuScoringAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7A786D22D9B8F6C008FEF2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7A786DB2D9B8F6C008FEF2E /* WushuScoringAppUITests.swift in Sources */,
+				D7A786DD2D9B8F6C008FEF2E /* WushuScoringAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D7A786CE2D9B8F6C008FEF2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7A786BB2D9B8F6A008FEF2E /* WushuScoringApp */;
+			targetProxy = D7A786CD2D9B8F6C008FEF2E /* PBXContainerItemProxy */;
+		};
+		D7A786D82D9B8F6C008FEF2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7A786BB2D9B8F6A008FEF2E /* WushuScoringApp */;
+			targetProxy = D7A786D72D9B8F6C008FEF2E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D7A786DE2D9B8F6C008FEF2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D7A786DF2D9B8F6C008FEF2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7A786E12D9B8F6C008FEF2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WushuScoringApp/Preview Content\"";
+				DEVELOPMENT_TEAM = SP53SGTMG3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wushutournaments.WushuScoringApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D7A786E22D9B8F6C008FEF2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WushuScoringApp/Preview Content\"";
+				DEVELOPMENT_TEAM = SP53SGTMG3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wushutournaments.WushuScoringApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D7A786E42D9B8F6C008FEF2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SP53SGTMG3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wushutournaments.WushuScoringAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WushuScoringApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WushuScoringApp";
+			};
+			name = Debug;
+		};
+		D7A786E52D9B8F6C008FEF2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SP53SGTMG3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wushutournaments.WushuScoringAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WushuScoringApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WushuScoringApp";
+			};
+			name = Release;
+		};
+		D7A786E72D9B8F6C008FEF2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SP53SGTMG3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wushutournaments.WushuScoringAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WushuScoringApp;
+			};
+			name = Debug;
+		};
+		D7A786E82D9B8F6C008FEF2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SP53SGTMG3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wushutournaments.WushuScoringAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WushuScoringApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D7A786B72D9B8F6A008FEF2E /* Build configuration list for PBXProject "WushuScoringApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7A786DE2D9B8F6C008FEF2E /* Debug */,
+				D7A786DF2D9B8F6C008FEF2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7A786E02D9B8F6C008FEF2E /* Build configuration list for PBXNativeTarget "WushuScoringApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7A786E12D9B8F6C008FEF2E /* Debug */,
+				D7A786E22D9B8F6C008FEF2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7A786E32D9B8F6C008FEF2E /* Build configuration list for PBXNativeTarget "WushuScoringAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7A786E42D9B8F6C008FEF2E /* Debug */,
+				D7A786E52D9B8F6C008FEF2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7A786E62D9B8F6C008FEF2E /* Build configuration list for PBXNativeTarget "WushuScoringAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7A786E72D9B8F6C008FEF2E /* Debug */,
+				D7A786E82D9B8F6C008FEF2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D7A786E92D9B96C5008FEF2E /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		D7A786EC2D9B96EE008FEF2E /* XCRemoteSwiftPackageReference "socket.io-client-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/socketio/socket.io-client-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D7A786EA2D9B96C5008FEF2E /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D7A786E92D9B96C5008FEF2E /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		D7A786ED2D9B96EE008FEF2E /* SocketIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D7A786EC2D9B96EE008FEF2E /* XCRemoteSwiftPackageReference "socket.io-client-swift" */;
+			productName = SocketIO;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D7A786B42D9B8F6A008FEF2E /* Project object */;
+}
