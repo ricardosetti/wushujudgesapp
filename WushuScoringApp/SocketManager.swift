@@ -1,4 +1,5 @@
 import Foundation
+
 import SocketIO
 
 class SocketManager: ObservableObject {
@@ -10,9 +11,11 @@ class SocketManager: ObservableObject {
     @Published var scorePublished: [String: Any]?
     @Published var activeDivisionUpdated: [String: Any]?
     @Published var tournamentDetailsUpdated: [String: Any]?
+    @Published var scoreSubmitted: [String: Any]?
+    @Published var scoreUpdated: [String: Any]? // Added for scoreUpdated event
+    @Published var deductionUpdated: [String: Any]?
 
     private init() {
-        // ✅ Fix: Explicitly use SocketIO.SocketManager
         manager = SocketIO.SocketManager(socketURL: URL(string: "http://157.245.9.25:5000")!, config: [.log(true), .forceWebsockets(true)])
         socket = manager.socket(forNamespace: "/")
 
@@ -46,13 +49,19 @@ class SocketManager: ObservableObject {
 
         socket.on("scoreSubmitted") { [weak self] data, _ in
             if let dataDict = data.first as? [String: Any] {
-                self?.publishScoreSubmitted(dataDict)
+                self?.scoreSubmitted = dataDict
+            }
+        }
+
+        socket.on("scoreUpdated") { [weak self] data, _ in
+            if let dataDict = data.first as? [String: Any] {
+                self?.scoreUpdated = dataDict
             }
         }
 
         socket.on("deductionUpdated") { [weak self] data, _ in
             if let dataDict = data.first as? [String: Any] {
-                self?.publishDeductionUpdated(dataDict)
+                self?.deductionUpdated = dataDict
             }
         }
     }
@@ -67,15 +76,5 @@ class SocketManager: ObservableObject {
 
     func emit(_ event: String, _ data: [String: Any]) {
         socket.emit(event, data)
-    }
-
-    @Published var scoreSubmitted: [String: Any]?
-    private func publishScoreSubmitted(_ data: [String: Any]) {
-        self.scoreSubmitted = data
-    }
-
-    @Published var deductionUpdated: [String: Any]?
-    private func publishDeductionUpdated(_ data: [String: Any]) {
-        self.deductionUpdated = data
     }
 }

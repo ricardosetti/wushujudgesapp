@@ -22,6 +22,9 @@
 		D7A786F62D9C774F008FEF2E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A786F52D9C774F008FEF2E /* LoginView.swift */; };
 		D7A786F82D9C777B008FEF2E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A786F72D9C777B008FEF2E /* HomeView.swift */; };
 		D7A786FA2D9C7813008FEF2E /* HeadJudgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A786F92D9C7813008FEF2E /* HeadJudgeView.swift */; };
+		D7A786FC2D9C8AC4008FEF2E /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A786FB2D9C8AC4008FEF2E /* Models.swift */; };
+		D7A786FE2DA357D6008FEF2E /* DivisionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A786FD2DA357D6008FEF2E /* DivisionsViewModel.swift */; };
+		D7A787002DA35801008FEF2E /* DivisionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A786FF2DA35801008FEF2E /* DivisionsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,9 @@
 		D7A786F52D9C774F008FEF2E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		D7A786F72D9C777B008FEF2E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		D7A786F92D9C7813008FEF2E /* HeadJudgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadJudgeView.swift; sourceTree = "<group>"; };
+		D7A786FB2D9C8AC4008FEF2E /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		D7A786FD2DA357D6008FEF2E /* DivisionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionsViewModel.swift; sourceTree = "<group>"; };
+		D7A786FF2DA35801008FEF2E /* DivisionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,9 @@
 				D7A786F52D9C774F008FEF2E /* LoginView.swift */,
 				D7A786F72D9C777B008FEF2E /* HomeView.swift */,
 				D7A786F92D9C7813008FEF2E /* HeadJudgeView.swift */,
+				D7A786FB2D9C8AC4008FEF2E /* Models.swift */,
+				D7A786FD2DA357D6008FEF2E /* DivisionsViewModel.swift */,
+				D7A786FF2DA35801008FEF2E /* DivisionsView.swift */,
 			);
 			path = WushuScoringApp;
 			sourceTree = "<group>";
@@ -289,10 +298,13 @@
 			files = (
 				D7A786F62D9C774F008FEF2E /* LoginView.swift in Sources */,
 				D7A786F82D9C777B008FEF2E /* HomeView.swift in Sources */,
+				D7A787002DA35801008FEF2E /* DivisionsView.swift in Sources */,
 				D7A786FA2D9C7813008FEF2E /* HeadJudgeView.swift in Sources */,
 				D7A786F02D9B972A008FEF2E /* NetworkManager.swift in Sources */,
 				D7A786F22D9B977F008FEF2E /* AuthManager.swift in Sources */,
 				D7A786C22D9B8F6A008FEF2E /* ContentView.swift in Sources */,
+				D7A786FC2D9C8AC4008FEF2E /* Models.swift in Sources */,
+				D7A786FE2DA357D6008FEF2E /* DivisionsViewModel.swift in Sources */,
 				D7A786C02D9B8F6A008FEF2E /* WushuScoringAppApp.swift in Sources */,
 				D7A786F42D9B97D9008FEF2E /* SocketManager.swift in Sources */,
 			);

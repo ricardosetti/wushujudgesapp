@@ -1,18 +1,9 @@
-//
-//  NetworkManager.swift
-//  WushuScoringApp
-//
-//  Created by Setti on 3/31/25.
-//
-
 import Foundation
-
-
 import Alamofire
 
 class NetworkManager {
     static let shared = NetworkManager()
-    private let baseURL = "http://157.245.9.25:5000" // Replace with your backend URL
+    private let baseURL = "http://157.245.9.25:5000"
     private var token: String?
 
     private init() {}
@@ -50,10 +41,24 @@ class NetworkManager {
         }
 
         AF.request("\(baseURL)/\(endpoint)", method: method, parameters: parameters, encoding: JSONEncoding.default, headers: headers)
-            .responseDecodable(of: T.self) { response in
+            .responseData { response in
+                if let data = response.data {
+                    let rawResponse = String(data: data, encoding: .utf8) ?? "No readable data"
+                    print("📦 Raw JSON response from \(endpoint):")
+                    print(rawResponse)
+                }
+
                 switch response.result {
-                case .success(let value):
-                    completion(.success(value))
+                case .success(let data):
+                    do {
+                        let decoder = JSONDecoder()
+                        // Removed keyDecodingStrategy to avoid interference with CodingKeys
+                        let decoded = try decoder.decode(T.self, from: data)
+                        completion(.success(decoded))
+                    } catch {
+                        print("❌ Decoding failed for \(endpoint): \(error)")
+                        completion(.failure(error))
+                    }
                 case .failure(let error):
                     if response.response?.statusCode == 401 {
                         self.token = nil
