@@ -1,5 +1,8 @@
 import Foundation
 
+struct EmptyResponse: Decodable {}
+
+
 struct Division: Decodable, Identifiable, Hashable {
     let id: Int
     let name: String
@@ -26,6 +29,16 @@ struct Participant: Decodable, Identifiable, Hashable {
         case firstName = "first_name"
         case lastName = "last_name"
         case active
+    }
+}
+
+struct TournamentDetails: Decodable {
+    let activeId: Int?
+    let onDeckId: Int?
+
+    enum CodingKeys: String, CodingKey {
+        case activeId = "Active_ID"
+        case onDeckId = "OnDeck_ID"
     }
 }
 

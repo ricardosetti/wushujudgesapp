@@ -1,11 +1,3 @@
-//
-//  HomeView.swift
-//  WushuScoringApp
-//
-//  Created by Setti on 4/1/25.
-//
-
-import Foundation
 import SwiftUI
 
 struct HomeView: View {
@@ -14,29 +6,50 @@ struct HomeView: View {
 
     var body: some View {
         NavigationView {
-            VStack {
+            VStack(spacing: 20) {
                 if let role = authManager.userRole {
                     switch role {
-//                    case "admin":
-//                        NavigationLink("Admin Panel", destination: AdminView())
                     case "head_judge":
-                        NavigationLink("Head Judge Panel", destination: HeadJudgeView())
-//                    case "judge_a":
-//                        if authManager.username == "judgea1" {
-//                            NavigationLink("Judge A1 Panel", destination: JudgeA1View())
-//                        } else {
-//                            NavigationLink("Judge A2 Panel", destination: JudgeA2View())
-//                        }
-//                    case "judge_b":
-//                        if authManager.username == "judgeb1" {
-//                            NavigationLink("Judge B1 Panel", destination: JudgeB1View())
-//                        } else {
-//                            NavigationLink("Judge B2 Panel", destination: JudgeB2View())
-//                        }
+                        VStack(spacing: 16) {
+                            Text("Welcome, \(authManager.username ?? "Head Judge")")
+                                .font(.title2)
+                                .padding(.bottom, 20)
+
+                            NavigationLink(destination: DivisionsView()) {
+                                Text("Manage Divisions")
+                                    .frame(maxWidth: .infinity)
+                                    .padding()
+                                    .background(Color.green)
+                                    .foregroundColor(.white)
+                                    .cornerRadius(12)
+                            }
+
+                            NavigationLink(destination: ParticipantsView()) {
+                                Text("Manage Participants")
+                                    .frame(maxWidth: .infinity)
+                                    .padding()
+                                    .background(Color.orange)
+                                    .foregroundColor(.white)
+                                    .cornerRadius(12)
+                            }
+
+                            NavigationLink(destination: HeadJudgeView()) {
+                                Text("Full Head Judge Panel")
+                                    .frame(maxWidth: .infinity)
+                                    .padding()
+                                    .background(Color.blue)
+                                    .foregroundColor(.white)
+                                    .cornerRadius(12)
+                            }
+                        }
+
                     default:
-                        Text("Unknown role")
+                        Text("Unknown role: \(role)")
+                            .foregroundColor(.red)
                     }
                 }
+
+                Spacer()
 
                 Button(action: {
                     authManager.logout()
@@ -48,7 +61,6 @@ struct HomeView: View {
                         .foregroundColor(.white)
                         .cornerRadius(10)
                 }
-                .padding()
             }
             .padding()
             .navigationTitle("Wushu Judges")

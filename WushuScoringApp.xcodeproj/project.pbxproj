@@ -25,6 +25,9 @@
 		D7A786FC2D9C8AC4008FEF2E /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A786FB2D9C8AC4008FEF2E /* Models.swift */; };
 		D7A786FE2DA357D6008FEF2E /* DivisionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A786FD2DA357D6008FEF2E /* DivisionsViewModel.swift */; };
 		D7A787002DA35801008FEF2E /* DivisionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A786FF2DA35801008FEF2E /* DivisionsView.swift */; };
+		D7A787022DA36D21008FEF2E /* ParticipantsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A787012DA36D21008FEF2E /* ParticipantsViewModel.swift */; };
+		D7A787042DA36DA5008FEF2E /* ParticipantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A787032DA36DA5008FEF2E /* ParticipantsView.swift */; };
+		D7A787062DA4BE9F008FEF2E /* TournamentContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A787052DA4BE9F008FEF2E /* TournamentContext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,9 @@
 		D7A786FB2D9C8AC4008FEF2E /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		D7A786FD2DA357D6008FEF2E /* DivisionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionsViewModel.swift; sourceTree = "<group>"; };
 		D7A786FF2DA35801008FEF2E /* DivisionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionsView.swift; sourceTree = "<group>"; };
+		D7A787012DA36D21008FEF2E /* ParticipantsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantsViewModel.swift; sourceTree = "<group>"; };
+		D7A787032DA36DA5008FEF2E /* ParticipantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantsView.swift; sourceTree = "<group>"; };
+		D7A787052DA4BE9F008FEF2E /* TournamentContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentContext.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +135,9 @@
 				D7A786FB2D9C8AC4008FEF2E /* Models.swift */,
 				D7A786FD2DA357D6008FEF2E /* DivisionsViewModel.swift */,
 				D7A786FF2DA35801008FEF2E /* DivisionsView.swift */,
+				D7A787012DA36D21008FEF2E /* ParticipantsViewModel.swift */,
+				D7A787032DA36DA5008FEF2E /* ParticipantsView.swift */,
+				D7A787052DA4BE9F008FEF2E /* TournamentContext.swift */,
 			);
 			path = WushuScoringApp;
 			sourceTree = "<group>";
@@ -300,9 +309,12 @@
 				D7A786F82D9C777B008FEF2E /* HomeView.swift in Sources */,
 				D7A787002DA35801008FEF2E /* DivisionsView.swift in Sources */,
 				D7A786FA2D9C7813008FEF2E /* HeadJudgeView.swift in Sources */,
+				D7A787062DA4BE9F008FEF2E /* TournamentContext.swift in Sources */,
+				D7A787022DA36D21008FEF2E /* ParticipantsViewModel.swift in Sources */,
 				D7A786F02D9B972A008FEF2E /* NetworkManager.swift in Sources */,
 				D7A786F22D9B977F008FEF2E /* AuthManager.swift in Sources */,
 				D7A786C22D9B8F6A008FEF2E /* ContentView.swift in Sources */,
+				D7A787042DA36DA5008FEF2E /* ParticipantsView.swift in Sources */,
 				D7A786FC2D9C8AC4008FEF2E /* Models.swift in Sources */,
 				D7A786FE2DA357D6008FEF2E /* DivisionsViewModel.swift in Sources */,
 				D7A786C02D9B8F6A008FEF2E /* WushuScoringAppApp.swift in Sources */,

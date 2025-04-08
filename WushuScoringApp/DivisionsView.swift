@@ -2,6 +2,7 @@ import SwiftUI
 
 struct DivisionsView: View {
     @StateObject private var viewModel = DivisionsViewModel()
+    @EnvironmentObject var tournamentContext: TournamentContext // ✅ Properly placed inside the struct
 
     var body: some View {
         VStack {
@@ -31,7 +32,9 @@ struct DivisionsView: View {
 
             Button(action: {
                 viewModel.saveActiveDivision { success in
-                    if !success {
+                    if success {
+                        tournamentContext.activeDivision = viewModel.selectedDivision // ✅ update context
+                    } else {
                         print("❌ Failed to save active division")
                     }
                 }
