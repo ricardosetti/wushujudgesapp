@@ -7,13 +7,17 @@ class ParticipantsViewModel: ObservableObject {
     @Published var onDeckParticipant: Participant?
     @Published var errorMessage: String?
 
-    func fetchParticipants() {
+    func fetchParticipants(for divisionName: String?) {
         NetworkManager.shared.request("participants") { (result: Result<[Participant], Error>) in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let participants):
-                    self.participants = participants.sorted { $0.name < $1.name }
-                    self.fetchTournamentDetails() // ✅ use new fetch
+                    let filtered = divisionName != nil
+                        ? participants.filter { $0.divisions.contains(divisionName!) }
+                        : participants
+
+                    self.participants = filtered.sorted { $0.name < $1.name }
+                    self.fetchTournamentDetails()
                 case .failure(let error):
                     self.errorMessage = error.localizedDescription
                 }

@@ -21,6 +21,8 @@ struct Participant: Decodable, Identifiable, Hashable {
     let firstName: String
     let lastName: String
     let active: Bool?
+    let divisions: [String]  // 👈 Now contains division names like "Northern Bare Hands"
+
     var name: String { "\(firstName) \(lastName)" }
 
     enum CodingKeys: String, CodingKey {
@@ -29,8 +31,10 @@ struct Participant: Decodable, Identifiable, Hashable {
         case firstName = "first_name"
         case lastName = "last_name"
         case active
+        case divisions
     }
 }
+
 
 struct TournamentDetails: Decodable {
     let activeId: Int?

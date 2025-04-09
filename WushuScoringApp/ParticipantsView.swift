@@ -53,7 +53,7 @@ struct ParticipantsView: View {
         }
         .navigationTitle("Participants")
         .onAppear {
-            viewModel.fetchParticipants()
+            viewModel.fetchParticipants(for: tournamentContext.activeDivision?.name)
         }
     }
 }

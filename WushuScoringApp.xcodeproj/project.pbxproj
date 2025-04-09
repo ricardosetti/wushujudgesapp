@@ -70,6 +70,7 @@
 		D7A787012DA36D21008FEF2E /* ParticipantsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantsViewModel.swift; sourceTree = "<group>"; };
 		D7A787032DA36DA5008FEF2E /* ParticipantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticipantsView.swift; sourceTree = "<group>"; };
 		D7A787052DA4BE9F008FEF2E /* TournamentContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TournamentContext.swift; sourceTree = "<group>"; };
+		D7CE32DA2DA605640093E802 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +123,7 @@
 		D7A786BE2D9B8F6A008FEF2E /* WushuScoringApp */ = {
 			isa = PBXGroup;
 			children = (
+				D7CE32DA2DA605640093E802 /* Info.plist */,
 				D7A786BF2D9B8F6A008FEF2E /* WushuScoringAppApp.swift */,
 				D7A786C12D9B8F6A008FEF2E /* ContentView.swift */,
 				D7A786C32D9B8F6C008FEF2E /* Assets.xcassets */,
@@ -480,6 +482,7 @@
 				DEVELOPMENT_TEAM = SP53SGTMG3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WushuScoringApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -509,6 +512,7 @@
 				DEVELOPMENT_TEAM = SP53SGTMG3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WushuScoringApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
